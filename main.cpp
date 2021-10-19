@@ -98,7 +98,6 @@ circleType::circleType(double x, double y, double r)
 :pointType(x,y) {
 	radius = r;
 }
-//YOUR CODE TO IMPLMENT THE CONSTRUCTORS AND FUNCTIONS IN THE CLASS Cylinder
 		void cylinderType::print() const{
       cout << "Base Center: ";
       pointType::print();
