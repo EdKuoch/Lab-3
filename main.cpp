@@ -1,10 +1,9 @@
-//Name: Jacob Gurley, Sze Man Tang, Joshua Decano, Edward Kuoch
-//Time: 7:54pm
 #define _USE_MATH_DEFINES
 #include <cmath>
 #include<iostream>
 #include<iomanip>
 using namespace std;
+
 class pointType {
 	public:
 		void setPoint(double x, double y);
@@ -17,6 +16,7 @@ class pointType {
 		double xCoordinate;
 		double yCoordinate;
 };
+
 class circleType: public pointType {
 	public:
 		void print() const;
@@ -29,6 +29,7 @@ class circleType: public pointType {
 	protected:
 		double radius;
 };
+
 class cylinderType: public circleType {
 	public:
 		void print() const;
@@ -47,6 +48,7 @@ class cylinderType: public circleType {
 	protected:
 		double height;
 };
+
 void pointType::setPoint(double x, double y) {
 	xCoordinate = x;
 	yCoordinate = y;
@@ -148,8 +150,7 @@ circleType::circleType(double x, double y, double r)
     }
 	
 
-int main()
-{
+int main(){
 cylinderType cylinder1(3, 2.5, 4, 2.5);
 cylinderType cylinder2;
 
